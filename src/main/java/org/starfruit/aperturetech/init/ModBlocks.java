@@ -4,6 +4,7 @@ import com.tterrag.registrate.util.entry.BlockEntry;
 import org.starfruit.aperturetech.block.EmergencyIntelligenceIncineratorBlock;
 import org.starfruit.aperturetech.block.EmergencyIntelligenceIncineratorWithSlidingDoorBlock;
 import org.starfruit.aperturetech.block.MaterialEmancipationGrillBlock;
+import org.starfruit.aperturetech.block.MaterialEmancipationGrillFrameBlock;
 
 import static org.starfruit.aperturetech.ApertureTechMod.REGISTRATE;
 
@@ -28,6 +29,12 @@ public class ModBlocks {
     public static final BlockEntry<MaterialEmancipationGrillBlock> MATERIAL_EMANCIPATION_GRILL =
             REGISTRATE.block("material_emancipation_grill", MaterialEmancipationGrillBlock::new)
                     .lang("Material Emancipation Grill")
+                    .simpleItem()
+                    .register();
+
+    public static final BlockEntry<MaterialEmancipationGrillFrameBlock> MATERIAL_EMANCIPATION_GRILL_FRAME =
+            REGISTRATE.block("material_emancipation_grill_frame", MaterialEmancipationGrillFrameBlock::new)
+                    .lang("Material Emancipation Grill Frame")
                     .simpleItem()
                     .register();
 
